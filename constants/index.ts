@@ -24,6 +24,6 @@ export const sortTypes = [
 ];
 
 export const avatarPlaceholderUrl =
-  "https://img.freepik.com/free-psd/3d-illustration-person-with-sunglasses_23-2149436188.jpg";
+  "https://i.pinimg.com/474x/ed/54/3b/ed543b461c96fb73519edf7ac8718f39.jpg";
 
 export const MAX_FILE_SIZE = 50 * 1024 * 1024; // 50MB

@@ -8,6 +8,7 @@ import { Query, ID } from "node-appwrite";
 import { parseStringify } from "@/lib/utils";
 import { email } from "zod";
 import { cookies } from "next/headers";
+import { avatarPlaceholderUrl } from "@/constants";
 
 const getUserByEmail = async (email: string) => {
   const { databases } = await createAdminClient(); // {} deconstruct, ONLY database
@@ -59,8 +60,7 @@ export const createAccount = async ({
       {
         fullName,
         email,
-        avatar:
-          "https://miro.medium.com/v2/resize:fit:720/1*W35QUSvGpcLuxPo3SRTH4w.png",
+        avatar: avatarPlaceholderUrl,
         accountId,
       },
     );

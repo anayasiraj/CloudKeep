@@ -2,7 +2,7 @@
 import React from "react";
 import Link from "next/link";
 import Image from "next/image";
-import { navItems } from "@/constants";
+import { avatarPlaceholderUrl, navItems } from "@/constants";
 import { usePathname } from "next/navigation";
 import { cn } from "@/lib/utils";
 
@@ -62,6 +62,16 @@ const Sidebar = () => {
         height={418}
         className="w-full"
       />
+
+      <div className={"sidebar-user-info"}>
+        <Image
+          src={avatarPlaceholderUrl}
+          alt="avatar"
+          width={44}
+          height={44}
+          className="sidebar-user-avatar"
+        />
+      </div>
     </aside>
   );
 };
