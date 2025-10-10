@@ -13,7 +13,7 @@ export const createSessionClient = async () => {
     .setProject(appwriteConfig.projectId); // client will be used to initialize
   // instances and services, stay connected to same project!!!
 
-  const session = (await cookies()).get("appwrite.session");
+  const session = (await cookies()).get("appwrite-session");
 
   if (!session || !session.value) throw new Error("No session");
 

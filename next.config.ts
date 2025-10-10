@@ -5,9 +5,6 @@ const nextConfig: NextConfig = {
     remotePatterns: [
       {
         protocol: "https",
-        // hostname: "img.freepik.com",
-        // hostname: "miro.medium.com",
-        // hostname: "cdn.wallpapersafari.com",
         hostname: "i.pinimg.com",
       },
       {
